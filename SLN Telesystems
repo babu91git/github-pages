@@ -1,0 +1,64 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+export default function SLNTelesystems() {
+  return (
+    <div className="p-8 space-y-12">
+      <header className="text-center space-y-2">
+        <h1 className="text-4xl font-bold text-blue-700">SLN Telesystems</h1>
+        <p className="text-lg text-gray-600">Your Needs Insipre Our Product & Service</p>
+      </header>
+
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold text-blue-600">Our Products</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="text-xl font-semibold">Data Communication:</h3>
+              <p className="text-gray-600">GSM/GPRS Modems (M2M, SCADA/ SMS).</p>
+              <p className="text-gray-600">Data logger's for remote data logging in automation and SCADA.</p>
+              <p className="text-gray-600">Hand Held printers(Dot matrix/Thermal)-Bio metric/MSR.</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="text-xl font-semibold">CCTV-Survelliance:</h3>
+              <p className="text-gray-600">CCTV survelliance (analog and as well as IP cameras, DVR, and NVR).</p>
+              <p className="text-gray-600">Video door phone.</p>
+              <p className="text-gray-600">Audio & Video- Conferencing- HD(board room, conference, Remote training/ Education).</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="text-xl font-semibold">Security Solutions:</h3>
+              <p className="text-gray-600">Times & Attendance (Bio-metric/RF-ID).</p>
+              <p className="text-gray-600">GPS/GPRS Vehicle/ Personal tracker services.</p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold text-blue-600">Careers</h2>
+        <p className="text-gray-700">Join our dynamic team and help shape the future of communication technology. We're currently hiring for the following positions:</p>
+        <ul className="list-disc list-inside text-gray-700">
+          <li>Software Engineer - VoIP Solutions</li>
+          <li>Network Support Specialist</li>
+          <li>Sales Executive - B2B</li>
+        </ul>
+        <Button className="mt-2">Apply Now</Button>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold text-blue-600">Contact Us</h2>
+        <p className="text-gray-700">We'd love to hear from you! Reach out to us through the following channels:</p>
+        <ul className="text-gray-700">
+          <li>Email: slntelesystems@gmail.com</li>
+          <li>Phone: +91-9940088862</li>
+          <li>Cell: +91-9100523809</li>
+        </ul>
+      </section>
+    </div>
+  );
+}
